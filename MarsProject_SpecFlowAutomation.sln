@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsProject_SpecFlowAutomation", "MarsProject_SpecFlowAutomation\MarsProject_SpecFlowAutomation.csproj", "{8C785B08-1736-468A-893B-98DC32217A15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C785B08-1736-468A-893B-98DC32217A15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C785B08-1736-468A-893B-98DC32217A15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C785B08-1736-468A-893B-98DC32217A15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C785B08-1736-468A-893B-98DC32217A15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B6EF805-D399-42A6-8BE1-AB1C728E66C7}
+	EndGlobalSection
+EndGlobal
