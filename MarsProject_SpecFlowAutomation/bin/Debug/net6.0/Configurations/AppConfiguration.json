@@ -1,0 +1,9 @@
+{
+  "browser": "chrome",
+  "userName": "anupolavarapu19@gmail.com",
+  "password": "Anu@141518",
+  "website": "http://localhost:5000/Home",
+  "pageLoadTimeOut": 100,
+  "implcitWait": 2,
+  "explicitWait": 60
+}

@@ -1,4 +1,6 @@
 ﻿using MarsProject_SpecFlowAutomation.Drivers;
+using MarsProject_SpecFlowAutomation.Models;
+using MarsProject_SpecFlowAutomation.Utilities;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -11,19 +13,20 @@ namespace MarsProject_SpecFlowAutomation.Hooks
     [Binding]
     public class InitializeWebDriver
     {
-        private static BrowserType? driverType =null;
-
+       
+        private static Configurations configurations;
+       
         [BeforeScenario(Order = 1)]
-        public void GetBrowesrToExexuteTestCases()
+        public void SetConfigurations()
         {
-            driverType = BrowserType.Chrome; // TODO: need to read this value from config file.
+            configurations = new Configurations(); 
         }
 
         [BeforeScenario(Order =2)]
         public void SetDriver()
         {
 
-            switch (driverType)
+            switch (Configurations.DriverType)
             {
                 case BrowserType.Chrome:
                 new ChromeBrowser();

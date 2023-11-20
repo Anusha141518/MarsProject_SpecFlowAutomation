@@ -1,0 +1,4 @@
+livingdoc test-assembly D:\Anusha\DotNetWorkSpace\MarsProject_SpecFlowAutomation\MarsProject_SpecFlowAutomation\bin\Debug\net6.0\MarsProject_SpecFlowAutomation.dll
+
+
+livingdoc test-assembly D:\Anusha\DotNetWorkSpace\MarsProject_SpecFlowAutomation\MarsProject_SpecFlowAutomation\bin\Debug\net6.0\MarsProject_SpecFlowAutomation.dll -t D:\Anusha\DotNetWorkSpace\MarsProject_SpecFlowAutomation\MarsProject_SpecFlowAutomation\bin\Debug\net6.0\TestExecution.json
