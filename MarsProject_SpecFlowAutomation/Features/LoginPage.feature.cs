@@ -147,7 +147,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 19
  testRunner.And("I click on valid username and click on sendverificationemail button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 21
+#line 20
  testRunner.Then("I see message has been sent to the verification mail", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

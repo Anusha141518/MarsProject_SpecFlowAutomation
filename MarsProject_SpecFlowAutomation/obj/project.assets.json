@@ -18,6 +18,24 @@
           "build/_._": {}
         }
       },
+      "Docker.DotNet/3.125.15": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
+          "System.Buffers": "4.5.1",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/netstandard2.1/Docker.DotNet.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/Docker.DotNet.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "DotNetSeleniumExtras.PageObjects.Core/4.14.1": {
         "type": "package",
         "dependencies": {
@@ -827,6 +845,22 @@
           }
         }
       },
+      "Selenium.Support/4.15.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.15.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Selenium.WebDriver/4.15.0": {
         "type": "package",
         "dependencies": {
@@ -948,6 +982,15 @@
         },
         "runtime": {
           "lib/netstandard1.6/System.AppContext.dll": {}
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "System.Collections/4.3.0": {
@@ -2024,6 +2067,23 @@
         "lib/netstandard2.0/BoDi.dll",
         "lib/netstandard2.0/BoDi.pdb",
         "tools/_._"
+      ]
+    },
+    "Docker.DotNet/3.125.15": {
+      "sha512": "XN8FKxVv8Mjmwu104/Hl9lM61pLY675s70gzwSj8KR5pwblo8HfWLcCuinh9kYsqujBkMH4HVRCEcRuU6al4BQ==",
+      "type": "package",
+      "path": "docker.dotnet/3.125.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "docker.dotnet.3.125.15.nupkg.sha512",
+        "docker.dotnet.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/Docker.DotNet.dll",
+        "lib/netstandard2.0/Docker.DotNet.pdb",
+        "lib/netstandard2.1/Docker.DotNet.dll",
+        "lib/netstandard2.1/Docker.DotNet.pdb"
       ]
     },
     "DotNetSeleniumExtras.PageObjects.Core/4.14.1": {
@@ -3191,6 +3251,20 @@
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
+    "Selenium.Support/4.15.0": {
+      "sha512": "zqkSQYMS2JcAd+AKavADPoe/RyYjiklc/TRms/nzDH9Wo/OpYOqE7h9D8ggwXr4auErNvbAIqEGqIkAWElTkpg==",
+      "type": "package",
+      "path": "selenium.support/4.15.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard2.0/WebDriver.Support.dll",
+        "lib/netstandard2.0/WebDriver.Support.xml",
+        "selenium.support.4.15.0.nupkg.sha512",
+        "selenium.support.nuspec"
+      ]
+    },
     "Selenium.WebDriver/4.15.0": {
       "sha512": "/uMlgsPdsmAAwOADxA4lzz777Xgbhm/SjmvizBpiRDyZtnAxDZ0uON5bpTN+De9F81xB/1z/S8jKN1P7ebYssw==",
       "type": "package",
@@ -3597,6 +3671,37 @@
         "runtimes/aot/lib/netcore50/System.AppContext.dll",
         "system.appcontext.4.1.0.nupkg.sha512",
         "system.appcontext.nuspec"
+      ]
+    },
+    "System.Buffers/4.5.1": {
+      "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+      "type": "package",
+      "path": "system.buffers/4.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Buffers.dll",
+        "lib/net461/System.Buffers.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net45/System.Buffers.dll",
+        "ref/net45/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "ref/uap10.0.16299/_._",
+        "system.buffers.4.5.1.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Collections/4.3.0": {
@@ -6403,12 +6508,14 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Docker.DotNet >= 3.125.15",
       "DotNetSeleniumExtras.PageObjects.Core >= 4.14.1",
       "DotNetSeleniumExtras.WaitHelpers >= 3.11.0",
       "ExtentReports >= 5.0.1",
       "FluentAssertions >= 6.12.0",
       "Microsoft.NET.Test.Sdk >= 17.7.2",
       "NUnit3TestAdapter >= 4.5.0",
+      "Selenium.Support >= 4.15.0",
       "Selenium.WebDriver >= 4.15.0",
       "SpecFlow.NUnit >= 3.9.74",
       "SpecFlow.Plus.LivingDocPlugin >= 3.9.57",
@@ -6421,11 +6528,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Anusha\\DotNetWorkSpace\\TurnupPortal_Automation\\MarsProject_SpecFlowAutomation\\MarsProject_SpecFlowAutomation\\MarsProject_SpecFlowAutomation\\MarsProject_SpecFlowAutomation.csproj",
+      "projectUniqueName": "D:\\Anusha\\DotNetWorkSpace\\MarsProject_SpecFlowAutomation\\MarsProject_SpecFlowAutomation\\MarsProject_SpecFlowAutomation.csproj",
       "projectName": "MarsProject_SpecFlowAutomation",
-      "projectPath": "D:\\Anusha\\DotNetWorkSpace\\TurnupPortal_Automation\\MarsProject_SpecFlowAutomation\\MarsProject_SpecFlowAutomation\\MarsProject_SpecFlowAutomation\\MarsProject_SpecFlowAutomation.csproj",
+      "projectPath": "D:\\Anusha\\DotNetWorkSpace\\MarsProject_SpecFlowAutomation\\MarsProject_SpecFlowAutomation\\MarsProject_SpecFlowAutomation.csproj",
       "packagesPath": "C:\\Users\\karun\\.nuget\\packages\\",
-      "outputPath": "D:\\Anusha\\DotNetWorkSpace\\TurnupPortal_Automation\\MarsProject_SpecFlowAutomation\\MarsProject_SpecFlowAutomation\\MarsProject_SpecFlowAutomation\\obj\\",
+      "outputPath": "D:\\Anusha\\DotNetWorkSpace\\MarsProject_SpecFlowAutomation\\MarsProject_SpecFlowAutomation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\karun\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6454,6 +6561,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Docker.DotNet": {
+            "target": "Package",
+            "version": "[3.125.15, )"
+          },
           "DotNetSeleniumExtras.PageObjects.Core": {
             "target": "Package",
             "version": "[4.14.1, )"
@@ -6477,6 +6588,10 @@
           "NUnit3TestAdapter": {
             "target": "Package",
             "version": "[4.5.0, )"
+          },
+          "Selenium.Support": {
+            "target": "Package",
+            "version": "[4.15.0, )"
           },
           "Selenium.WebDriver": {
             "target": "Package",

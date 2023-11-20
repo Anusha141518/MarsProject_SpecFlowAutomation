@@ -11,6 +11,7 @@ namespace MarsProject_SpecFlowAutomation.Utilities
     public class CommonDriver
     {
         public static IWebDriver driver;
+
     }
 }
 

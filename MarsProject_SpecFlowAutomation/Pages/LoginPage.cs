@@ -56,7 +56,6 @@ namespace MarsProject_SpecFlowAutomation.Pages
             driver.FindElement(sendVerificationEmailButton).Click();
 
         }
-
         public  void VerifyHomePageTitle()
         {
             var homePageTitle = driver.Title;
