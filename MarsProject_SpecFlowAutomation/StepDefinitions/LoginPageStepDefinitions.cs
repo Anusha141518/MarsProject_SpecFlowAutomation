@@ -71,6 +71,59 @@ namespace MarsProject_SpecFlowAutomation.StepDefinitions
             LoginPageObj.VerifyHomePageTitle();
         }
 
+        [When(@"I login with invalid (.*) and valid (.*)")]
+        public void ILoginWithInvalidUserNameAndValidPassword(string username, string password)
+        {
+            LoginPageObj.setUserName(username);
+            LoginPageObj.setPassword(password);
+        }
+
+        [When(@"I login with invalid (.*) and invalid (.*)")]
+        public void WhenILoginWithInvalidUserNameAndInvalidPassword(string username, string password)
+        {
+            LoginPageObj.setUserName(username);
+            LoginPageObj.setPassword(password);
+        }
+
+        [When(@"I login with (.*)  and valid (.*)")]
+        public void WhenILoginWithEmptyUserNameAndValidPassword(string username, string password)
+        {
+            LoginPageObj.setUserName(username);
+            LoginPageObj.setPassword(password);
+        }
+
+        [Then(@"I can see email validation text")]
+        public void ICanSeeEmailValidationText()
+        {
+            LoginPageObj.EmptyEmailVerficationMessage();
+        }
+
+        [When(@"I login with valid (.*) and empty (.*)")]
+        public void WhenILoginWithValidUserNameAndEmptyPawword(string username, string? password)
+        {
+            LoginPageObj.setUserName(username);
+            LoginPageObj.setPassword(password);
+        }
+
+        [Then(@"I can see password validation text")]
+        public void ThenICanSeePasswordValidationText()
+        {
+            LoginPageObj.EmptypasswordVerficationMessage();
+        }
+
+        [When(@"I login with empty (.*) and empty (.*)")]
+        public void WhenILoginWithEmptyUserNameAndEmptyPassword(string username, string password)
+        {
+            LoginPageObj.setUserName(username);
+            LoginPageObj.setPassword(password);
+        }
+
+        [Then(@"I can see email and password validation text")]
+        public void ThenICanSeeEmailANdPasswordValidationText()
+        {
+            LoginPageObj.EmptyEmailAndEmptyPasswordVerficationMessage();
+        }
+
 
     }
 }
